@@ -29,3 +29,23 @@ print(type(dict_var))
 print(type(bool_var))
 print(type(none_var))
 
+#int_var.append(10)
+#print(int_var)
+list_var.append(7)
+print(list_var)
+list_var.insert(1,8)
+print(list_var)
+list_var.pop(2)
+print(list_var)
+
+#set_var.pop(2)
+#print(set_var)
+
+str_var +="d"
+print(str_var)
+
+tuple_var =[x for x in tuple_var if x!=1] 
+print(tuple_var)
+
+set_var = [x for x in set_var if x!=2]
+print(set_var)
