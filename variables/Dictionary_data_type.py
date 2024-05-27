@@ -1,4 +1,4 @@
-my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
+my_dict = {'name': 'prisca', 'age': 25, 'city': 'New York'}
 
 # Accessing items using keys
 name = my_dict['name']
