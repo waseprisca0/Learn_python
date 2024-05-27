@@ -27,3 +27,11 @@ print(my_dict)
 age = my_dict.pop('age')
 print(age)     
 print(my_dict)
+
+#copy dictionary
+copy = my_dict.copy()
+print(copy)
+
+dict2 = {'color': 'red', 'sport' : 'volley'}
+my_dict.update(dict2)
+print(my_dict)
