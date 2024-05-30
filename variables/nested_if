@@ -23,6 +23,33 @@ def calculator():
     print("Error: Invalid operator")
     return
 
+
+
+
+dict = [{"name": "prisca", "marks": 40 , "stipend": 2000}, {"name": "prince", "marks": 50 , "stipend": 6000},
+        {"name": "Alice", "marks": 80 , "stipend": 2500}]
+#print(dict)
+#for item in dict:
+    ##print(item)
+    #print(dict[marks])
+    
+#student loan example
+def fparameter(dict):
+  for item in dict:
+    print(item["marks"])
+    if item["marks"] >= 50 and item["stipend"] >= 2700:
+      print("eligible to access and buy food in the restaurant")
+    elif item["marks"] < 50 and item["stipend"] >= 2700:
+      print("can not access restaurant but can buy food")
+    elif item["marks"] >= 50 and item["stipend"] < 2700 :
+      print("have access but can not buy food")
+
+    else:
+      print("not eligible")
+        
+    
+fparameter(dict)    
+
   print(f"{num1} {operator} {num2} = {result}")
 
 if __name__ == "__main__":
