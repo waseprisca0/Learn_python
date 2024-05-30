@@ -26,14 +26,14 @@ def calculate(operation, x, y):
 
 # Main Function
 def main():
-    try:
+    #try:
         print("Addition:", calculate('+', 10, 5))             
         print("Subtraction:", calculate('-', 10, 5))     
         print("Multiplication:", calculate('*', 10, 5))  
         print("Division:", calculate('/', 10, 5))          
-        print("Division:", calculate('/', 10, 0))          
-    except ValueError as e:
-        print(e)
+        #print("Division:", calculate('/', 10, 0))          
+    #except ValueError as e:
+        #print(e)
 
 # Run the main function
 if __name__ == "__main__":
