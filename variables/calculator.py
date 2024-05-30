@@ -14,11 +14,11 @@ def divide(x, y):
 # Calculate Function
 def calculate(operation, x, y):
     if operation == '+':
-        return x+y
+        return add(x,y)
     elif operation == '-':
-        return x-y
+        return subtract(x,y)
     elif operation == '*':
-        return x*y
+        return multiply(x,y)
     elif operation == '/':
         return divide(x, y)
     else:
@@ -38,3 +38,4 @@ def main():
 # Run the main function
 if __name__ == "__main__":
     main()
+    
