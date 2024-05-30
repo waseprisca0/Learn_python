@@ -1,28 +1,18 @@
 # Functions for Operations
-
 def add(x, y):
-    
     return x + y
-
 def subtract(x, y):
-   
     return x - y
-
 def multiply(x, y):
-    
-    return x * y
-
+     return x * y
 def divide(x, y):
-   
     if y == 0:
         raise ValueError("Can not be divided by zero!")
     else:
         return x / y
 
 # Calculate Function
-
 def calculate(operation, x, y):
-    
     if operation == '+':
         return x+y
     elif operation == '-':
@@ -35,7 +25,6 @@ def calculate(operation, x, y):
         raise ValueError("Invalid operation!")
 
 # Main Function
-
 def main():
     try:
         print("Addition:", calculate('+', 10, 5))             
