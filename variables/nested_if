@@ -27,3 +27,47 @@ def calculator():
 
 if __name__ == "__main__":
   calculator()
+
+
+
+
+
+def is_loan_accepted():
+
+    income = float(input("Enter income: "))
+    gpa = float(input("Enter gpa: "))
+    credit_score = float(input("enter credit: "))
+    gender = input("choose gender (male,female): ")
+    loan_amount = float(input("enter loan amount: "))
+
+
+    max_income = 50000
+    min_gpa_male = 3.0
+    min_gpa_female = 3.2
+    min_credit_score_male = 600
+    min_credit_score_female = 650
+    max_loan_amount = 20000
+    
+    if income > max_income:
+        return False
+    
+    if loan_amount > max_loan_amount:
+        return False
+    
+    if gender == 'male':
+        if gpa < min_gpa_male:
+            return False
+        if credit_score < min_credit_score_male:
+            return False
+    elif gender == 'female':
+        if gpa < min_gpa_female:
+            return False
+        if credit_score < min_credit_score_female:
+            return False
+    else:
+        return False
+    
+     return (f"{income} {gpa} {credit_score} {gender} {loan_amount} = {'accepted'}")
+
+if __name__ == "__main__":
+  is_loan_accepted()
