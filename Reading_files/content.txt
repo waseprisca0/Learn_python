@@ -1,2 +1,0 @@
-{"title": "Health first", "author": "Prisca M", "isbn": "S123456789"}
-{"title": "How to get money", "author": "Uwase P", "isbn": "P987654321"}
