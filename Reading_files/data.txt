@@ -8,3 +8,5 @@
 {"title": "rwandanziza", "author": "urwawe", "isbn": "r44555"}
 {"title": "rura", "author": "wawe", "isbn": "d2333"}
 {"title": "re", "author": "de", "isbn": "d123"}
+{"title": "rwanda", "author": "prisca", "isbn": "s1233"}
+{"title": "life", "author": "uwase", "isbn": "s1233"}

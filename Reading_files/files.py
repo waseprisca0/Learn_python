@@ -32,12 +32,12 @@ class Library:
         self.books.append(book)
         print(f"Book '{book.title}' added to the library.")
 
-    def view_books(self):
-        if not self.books:
-            print("No books in the library.")
-        else:
-            for book in self.books:
-                print(book)
+    #def view_books(self):
+        #if not self.books:
+            #print("No books in the library.")
+        #else:
+            #for book in self.books:
+                #print(book)
 
     def save_to_file(self, filename):
         
@@ -66,26 +66,26 @@ class Library:
 
 def main():
 
-    title = str(input("enter title: \n"))
-    author= str(input("enter author: \n"))
-    isbn = str(input("enter isbn: \n"))
+    #title = str(input("enter title: \n"))
+    #author= str(input("enter author: \n"))
+    #isbn = str(input("enter isbn: \n"))
 
-    book= Book(title,author,isbn)
+    #book= Book(title,author,isbn)
     # Create a library instance and add some books
     library = Library()
-    book1 = Book("Health first", "Prisca M", "S123456789")
-    book2 = Book("How to get money", "Uwase P", "P987654321")
-    library.add_book(book)
+    #book1 = Book("Health first", "Prisca M", "S123456789")
+    #book2 = Book("How to get money", "Uwase P", "P987654321")
+    #library.add_book(book)
     #library.add_book(book1)
     #library.add_book(book2)
 
     # View books in the library
-    print("\nBooks in the library:")
-    library.view_books()
+    #print("\nBooks in the library:")
+    #library.view_books()
 
     # Save the library to a file
-    library.save_to_file('data.txt')
-    library.load_books()
+    #library.save_to_file('data.txt')
+    #library.load_books()
 
     while True:
         print("\n######## Welcome to the Library ###############")
@@ -95,10 +95,10 @@ def main():
         print("4. Check out a book")
         print("5. Save and Exit")
 
-        choice = input("Choose an option: \n\n")
+        choice = input("Choose an option: ")
 
-        if choice == '1 ':
-            library.view_books()
+        if choice == '1':
+            library.load_books()
         elif choice == '2':
             search_title = input("Enter the title of the book to search: ")
             library.search_book(search_title)
